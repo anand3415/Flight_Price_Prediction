@@ -16,7 +16,7 @@ def get_requirements(file_path:str)->List[str]:
     return requirements
 
 setup(
-    name='Fraud Transacction detection internship project',
+    name='Flight Ticket Prices Prediction',
     version='0.0.1',
     author='Anand Jangir',
     author_email='anand.jangir5829@gmail.com',

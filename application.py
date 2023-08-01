@@ -11,7 +11,7 @@ model = pickle.load(open("Model/random_forest_model.pkl", "rb"))
 @app.route("/")
 @cross_origin()
 def home():
-    return render_template("home.html")
+    return render_template("./home.html")
 
 
 @app.route("/predict", methods = ["GET", "POST"])
@@ -353,10 +353,10 @@ def predict():
 
         output=round(prediction[0],2)
 
-        return render_template('home.html',prediction_text="Your Flight Price is Rs. {}".format(output))
+        return render_template('./home.html',prediction_text="Your Flight Price is Rs. {}".format(output))
 
 
-    return render_template("home.html")
+    return home()
 
 
 
